@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl1Status = new System.Windows.Forms.Label();
-            this.btnNewGame = new System.Windows.Forms.Button();
-            this.Player2 = new System.Windows.Forms.PictureBox();
-            this.Player1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -45,9 +38,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox0 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl1Status = new System.Windows.Forms.Label();
+            this.btnNewGame = new System.Windows.Forms.Button();
+            this.Player2 = new System.Windows.Forms.PictureBox();
+            this.Player1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -57,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -76,94 +76,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label1.Location = new System.Drawing.Point(32, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Player1";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.label2.Location = new System.Drawing.Point(539, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Player2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(218, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 45);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Tic Tac Toe";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl1Status
-            // 
-            this.lbl1Status.Font = new System.Drawing.Font("Verdana", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1Status.ForeColor = System.Drawing.Color.Black;
-            this.lbl1Status.Location = new System.Drawing.Point(218, 503);
-            this.lbl1Status.Name = "lbl1Status";
-            this.lbl1Status.Size = new System.Drawing.Size(228, 45);
-            this.lbl1Status.TabIndex = 4;
-            this.lbl1Status.Text = "Status Goes Here";
-            this.lbl1Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl1Status.UseMnemonic = false;
-            // 
-            // btnNewGame
-            // 
-            this.btnNewGame.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewGame.Location = new System.Drawing.Point(223, 456);
-            this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(223, 44);
-            this.btnNewGame.TabIndex = 9;
-            this.btnNewGame.Text = "&New Game...";
-            this.btnNewGame.UseVisualStyleBackColor = true;
-            // 
-            // Player2
-            // 
-            this.Player2.AccessibleDescription = "Racer X\'s Shooting Star";
-            this.Player2.AccessibleName = "Player 2";
-            this.Player2.BackColor = System.Drawing.Color.Black;
-            this.Player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Player2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Player2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Player2.Image = global::TicTacToeCSharp.Properties.Resources.shooting_star_66px;
-            this.Player2.Location = new System.Drawing.Point(554, 115);
-            this.Player2.Name = "Player2";
-            this.Player2.Size = new System.Drawing.Size(80, 80);
-            this.Player2.TabIndex = 11;
-            this.Player2.TabStop = false;
-            this.Player2.Tag = "Player2";
-            this.Player2.Click += new System.EventHandler(this.Player2_Click);
-            // 
-            // Player1
-            // 
-            this.Player1.AccessibleDescription = "Speed Racer\'s Mach Five";
-            this.Player1.AccessibleName = "Player 1";
-            this.Player1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Player1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Player1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Player1.Image = global::TicTacToeCSharp.Properties.Resources.Mach_Five_66;
-            this.Player1.Location = new System.Drawing.Point(49, 115);
-            this.Player1.Name = "Player1";
-            this.Player1.Size = new System.Drawing.Size(80, 80);
-            this.Player1.TabIndex = 10;
-            this.Player1.TabStop = false;
-            this.Player1.Tag = "Player1";
             // 
             // pictureBox6
             // 
@@ -281,6 +193,95 @@
             this.pictureBox0.TabStop = false;
             this.pictureBox0.Click += new System.EventHandler(this.OnClick);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.label1.Location = new System.Drawing.Point(32, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Player1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.label2.Location = new System.Drawing.Point(539, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Player2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(218, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 45);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Tic Tac Toe";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl1Status
+            // 
+            this.lbl1Status.Font = new System.Drawing.Font("Verdana", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1Status.ForeColor = System.Drawing.Color.Black;
+            this.lbl1Status.Location = new System.Drawing.Point(218, 503);
+            this.lbl1Status.Name = "lbl1Status";
+            this.lbl1Status.Size = new System.Drawing.Size(228, 45);
+            this.lbl1Status.TabIndex = 4;
+            this.lbl1Status.Text = "Status Goes Here";
+            this.lbl1Status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl1Status.UseMnemonic = false;
+            // 
+            // btnNewGame
+            // 
+            this.btnNewGame.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewGame.Location = new System.Drawing.Point(223, 456);
+            this.btnNewGame.Name = "btnNewGame";
+            this.btnNewGame.Size = new System.Drawing.Size(223, 44);
+            this.btnNewGame.TabIndex = 9;
+            this.btnNewGame.Text = "&New Game...";
+            this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.BtnNewGame_Click);
+            // 
+            // Player2
+            // 
+            this.Player2.AccessibleDescription = "Racer X\'s Shooting Star";
+            this.Player2.AccessibleName = "Player 2";
+            this.Player2.BackColor = System.Drawing.Color.Black;
+            this.Player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Player2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Player2.Image = global::TicTacToeCSharp.Properties.Resources.shooting_star_66px;
+            this.Player2.Location = new System.Drawing.Point(554, 115);
+            this.Player2.Name = "Player2";
+            this.Player2.Size = new System.Drawing.Size(80, 80);
+            this.Player2.TabIndex = 11;
+            this.Player2.TabStop = false;
+            this.Player2.Tag = "Player2";
+            this.Player2.Click += new System.EventHandler(this.Player2_Click);
+            // 
+            // Player1
+            // 
+            this.Player1.AccessibleDescription = "Speed Racer\'s Mach Five";
+            this.Player1.AccessibleName = "Player 1";
+            this.Player1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.Player1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Player1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Player1.Image = global::TicTacToeCSharp.Properties.Resources.Mach_Five_66;
+            this.Player1.Location = new System.Drawing.Point(49, 115);
+            this.Player1.Name = "Player1";
+            this.Player1.Size = new System.Drawing.Size(80, 80);
+            this.Player1.TabIndex = 10;
+            this.Player1.TabStop = false;
+            this.Player1.Tag = "Player1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,8 +302,6 @@
             this.Text = "TicTacToe";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -312,6 +311,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             this.ResumeLayout(false);
 
         }

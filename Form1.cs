@@ -16,23 +16,38 @@ namespace TicTacToeCSharp
         enum PlayerTurn { None, Player1, Player2 };
 
         PlayerTurn turn;
-
+        
         void OnNewGame()
         {
-            turn = PlayerTurn.Player1;
+            PictureBox[] squares = 
+            { pictureBox0,
+                pictureBox1, pictureBox2, pictureBox3, pictureBox4,
+                pictureBox5, pictureBox6, pictureBox7, pictureBox8
+            };
+
+            foreach (var square in squares)
+            {
+                square.Image = null;
+                square.BackColor = Color.White;
+            }
+        turn = PlayerTurn.Player1;
             ShowStatus();
         }
+        // This is a refactor introducing a local variable  
 
         void ShowStatus()
         {
+            string status = "";
+
             if(turn == PlayerTurn.Player1)
             {
-                lbl1Status.Text = "Turn: Player 1";
+                status = "Turn: Player 1";
             }
             else
             {
-                lbl1Status.Text = "Turn: Player 2";
+                status = "Turn: Player 2";
             }
+            lbl1Status.Text = status;
         }
 
         public Form1()
@@ -77,6 +92,19 @@ namespace TicTacToeCSharp
         private void Player2_Click(object sender, EventArgs e)
         {
             turn = PlayerTurn.Player1;
+        }
+
+        private void BtnNewGame_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to start a new game?",
+                "New Game",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                OnNewGame();
+            }
         }
     }
 }
